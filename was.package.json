@@ -1,5 +1,5 @@
 {
-  "name" : "wmodulefortesting1",
+  "name" : "wmodulefortesting3",
   "version" : "0.0.137",
   "engine" : "node >= 10.0.0",
   "description" : "Module for testing. This module is a test asset and not intended to be used with another purpose.",
@@ -16,13 +16,13 @@
   "repository" :
   {
     "type" : "git",
-    "url" : "https://github.com/Wandalen/wModuleForTesting1.git"
+    "url" : "https://github.com/Wandalen/wModuleForTesting3.git"
   },
   "bugs" :
   {
-    "url" : "https://github.com/Wandalen/wModuleForTesting1/issues"
+    "url" : "https://github.com/Wandalen/wModuleForTesting3/issues"
   },
   "dependencies" : {},
-  "devDependencies" : { "wmodulefortesting1" : "file:.", "wTesting" : "", "eslint" : "7.1.0" },
+  "devDependencies" : { "wmodulefortesting3" : "file:.", "wmodulefortesting1" : "" },
   "keywords" : [ "willbe", "test" ]
 }
