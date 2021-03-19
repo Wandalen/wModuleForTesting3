@@ -13,7 +13,7 @@ if( typeof module !== 'undefined' )
     catch( err )
     {
       toolsExternal = 1;
-      require( 'wmodulefortesting1' );
+      require( 'wmodulefortesting3' );
     }
     if( !toolsExternal )
     require( toolsPath );
