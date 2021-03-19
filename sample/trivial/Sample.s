@@ -1,5 +1,5 @@
 
-require( 'wmodulefortesting1' );
+require( 'wmodulefortesting3' );
 
 let _ = _global_._test_;
 

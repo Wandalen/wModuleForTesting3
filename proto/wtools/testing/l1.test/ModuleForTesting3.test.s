@@ -1,4 +1,4 @@
-( function _ModuleForTesting1_test_s_()
+( function _ModuleForTesting3_test_s_()
 {
 
 'use strict';
@@ -37,7 +37,7 @@ function trivial( test )
 let Self =
 {
 
-  name : 'Tools.l1.ModuleForTesting1',
+  name : 'Tools.l1.ModuleForTesting3',
   silencing : 1,
 
   tests :
