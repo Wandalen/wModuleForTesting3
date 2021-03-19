@@ -62,7 +62,7 @@ if( typeof module !== 'undefined' )
 
   _global = globalNamespaceOpen( _global, '_test_' );
 
-  require( '../l1/ModuleForTesting3.s' )
+  require( '../l1/ModuleForTesting1.s' )
 }
 
 if( typeof module !== 'undefined' )
