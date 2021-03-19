@@ -1,6 +1,6 @@
 {
-  "name": "wmodulefortesting1",
-  "version": "0.0.137",
+  "name": "wmodulefortesting3",
+  "version": "0.0.138",
   "engine": "node >= 10.0.0",
   "description": "Module for testing. This module is a test asset and not intended to be used with another purpose.",
   "author": "Kostiantyn Wandalen <wanalen@01.school>",
@@ -27,16 +27,16 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/Wandalen/wModuleForTesting1.git"
+    "url": "https://github.com/Wandalen/wModuleForTesting3.git"
   },
   "bugs": {
-    "url": "https://github.com/Wandalen/wModuleForTesting1/issues"
+    "url": "https://github.com/Wandalen/wModuleForTesting3/issues"
   },
   "dependencies": {},
   "devDependencies": {
     "eslint": "7.1.0",
-    "wTesting": "gamma",
-    "wmodulefortesting1": "file:."
+    "wmodulefortesting1": "gamma",
+    "wmodulefortesting3": "file:."
   },
   "keywords": [
     "willbe",
