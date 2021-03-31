@@ -11,7 +11,7 @@
     { "name" : "Kryvoruchko Dmytro", "email" : "dm.vict.kr@gmail.com" }
   ],
   "main" : "proto/wtools/testing/l1/Include.s",
-  "files" : [ "proto/wtools/testing/l1", "proto/wtools/testing/Basic.s", "out" ],
+  "files" : [ "proto/wtools/testing/l1", "proto/wtools/testing/Basic.s", "out", "proto/node_modules" ],
   "scripts" : { "test" : "wtest .run 'proto/**' rapidity:-3", "docgen" : "wdocgen proto" },
   "repository" :
   {
@@ -23,6 +23,6 @@
     "url" : "https://github.com/Wandalen/wModuleForTesting3/issues"
   },
   "dependencies" : {},
-  "devDependencies" : { "wmodulefortesting3" : "file:.", "wmodulefortesting1" : "" },
+  "devDependencies" : { "wmodulefortesting1" : "" },
   "keywords" : [ "willbe", "test" ]
 }
