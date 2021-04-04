@@ -6,17 +6,17 @@ consistency:
     hash: e339f1e4dc9c63aac362624b639c6ffd
     size: 1861
   ../.im.will.yml: &ref_1
-    hash: 6da9dc5464ac704c3c83c9638e0a414b
-    size: 4784
+    hash: c5569ba48b2707a39a0210e354df54fc
+    size: 4848
   ../.module/ModuleForTesting1/out/wModuleForTesting1.out.will.yml: &ref_6
-    hash: 851c9b04a3024edc531ea673443f4174
-    size: 37929
+    hash: cd2e9edbaf2b9f149ad2cfa57689a6ac
+    size: 38321
   ../.module/ModuleForTesting1/.ex.will.yml: &ref_7
     hash: 136f3176aac4abc3812e6ff57b852ab7
     size: 1861
   ../.module/ModuleForTesting1/.im.will.yml: &ref_8
-    hash: 8d39ce73a544ea2934646bc8fed76682
-    size: 4949
+    hash: 50a85f0c9fac7d538d0964b5a00fb247
+    size: 4902
 module:
   wModuleForTesting3.out:
     about:
@@ -152,6 +152,10 @@ module:
           raw: compiled
           content: prime
         path: '{path::out.*=}/source/Index.s'
+      npm.proto.entry:
+        path:
+          - ../proto/wtools/testing/l1/Include.s
+          - ../proto/node_modules/wmodulefortesting3
       exported.dir.proto.export:
         criterion:
           generated: 1
@@ -904,6 +908,10 @@ module:
           raw: compiled
           content: prime
         path: '{path::out.*=}/source/Index.s'
+      npm.proto.entry:
+        path:
+          - proto/wtools/testing/l1/Include.s
+          - proto/node_modules/wmodulefortesting3
     submodule:
       ModuleForTesting1:
         path: >-
@@ -1445,8 +1453,8 @@ module:
         hash: e339f1e4dc9c63aac362624b639c6ffd
         size: 1861
       ../.im.will.yml:
-        hash: 6da9dc5464ac704c3c83c9638e0a414b
-        size: 4784
+        hash: c5569ba48b2707a39a0210e354df54fc
+        size: 4848
   ../.module/ModuleForTesting1/out/wModuleForTesting1.out:
     about:
       name: wModuleForTesting1
@@ -1581,6 +1589,10 @@ module:
           raw: compiled
           content: prime
         path: '{path::out.*=}/source/Index.s'
+      npm.proto.entry:
+        path:
+          - ../proto/wtools/testing/l1/Include.s
+          - ../proto/node_modules/wmodulefortesting1
       exported.dir.proto.export:
         criterion:
           generated: 1
@@ -1595,6 +1607,8 @@ module:
         path:
           - ../proto
           - ../proto/Integration.test.ss
+          - ../proto/node_modules
+          - ../proto/node_modules/wmodulefortesting1
           - ../proto/wtools
           - ../proto/wtools/testing
           - ../proto/wtools/testing/Basic.s
@@ -2366,6 +2380,10 @@ module:
           raw: compiled
           content: prime
         path: '{path::out.*=}/source/Index.s'
+      npm.proto.entry:
+        path:
+          - proto/wtools/testing/l1/Include.s
+          - proto/node_modules/wmodulefortesting1
     submodule:
       Testing:
         path: 'npm:///wTesting'
