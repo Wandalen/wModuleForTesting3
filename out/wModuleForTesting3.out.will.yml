@@ -2,19 +2,22 @@ format: outwillfile-2.0
 root:
   - wModuleForTesting3.out
 consistency:
-  ../.ex.will.yml: &ref_0
+  wModuleForTesting3.out.will.yml: &ref_0
+    hash: 1d41a099b641873ca52f61aa982d0592
+    size: 77519
+  ../.ex.will.yml: &ref_1
     hash: e339f1e4dc9c63aac362624b639c6ffd
     size: 1861
-  ../.im.will.yml: &ref_1
+  ../.im.will.yml: &ref_2
     hash: c5569ba48b2707a39a0210e354df54fc
     size: 4848
-  ../.module/ModuleForTesting1/out/wModuleForTesting1.out.will.yml: &ref_6
+  ../.module/ModuleForTesting1/out/wModuleForTesting1.out.will.yml: &ref_3
     hash: cd2e9edbaf2b9f149ad2cfa57689a6ac
     size: 38321
-  ../.module/ModuleForTesting1/.ex.will.yml: &ref_7
+  ../.module/ModuleForTesting1/.ex.will.yml: &ref_4
     hash: 136f3176aac4abc3812e6ff57b852ab7
     size: 1861
-  ../.module/ModuleForTesting1/.im.will.yml: &ref_8
+  ../.module/ModuleForTesting1/.im.will.yml: &ref_5
     hash: 50a85f0c9fac7d538d0964b5a00fb247
     size: 4902
 module:
@@ -27,20 +30,20 @@ module:
         used with another purpose.
       enabled: 1
       version: 0.0.1
-      interpreters: &ref_2
+      interpreters:
         - njs >= 10.0.0
         - chrome >= 60.0.0
         - firefox >= 60.0.0
-      keywords: &ref_3
+      keywords:
         - willbe
         - test
       license: MIT
       author: Kostiantyn Wandalen <wanalen@01.school>
-      contributors: &ref_4
+      contributors:
         - Kostiantyn Wandalen <wanalen@01.school>
         - Kryvoruchko Dmytro <dm.vict.kr@gmail.com>
       npm.name: wmodulefortesting1
-      npm.scripts: &ref_5
+      npm.scripts:
         test: wtest .run proto/**
         docgen: wdocgen .build proto
     path:
@@ -693,6 +696,24 @@ module:
           content: prime
         inherit:
           - files.transpile
+      exported.proto.export:
+        opts:
+          filePath: 'reflector::exported.proto.export'
+        criterion:
+          generated: 1
+          content: proto
+          export: 1
+        inherit:
+          - files.reflect
+      exported.files.proto.export:
+        opts:
+          filePath: 'reflector::exported.files.proto.export'
+        criterion:
+          generated: 1
+          content: proto
+          export: 1
+        inherit:
+          - files.reflect
     build:
       proto.export:
         steps:
@@ -781,8 +802,9 @@ module:
           content: proto
           export: 1
     consistency:
-      ../.ex.will.yml: *ref_0
-      ../.im.will.yml: *ref_1
+      wModuleForTesting3.out.will.yml: *ref_0
+      ../.ex.will.yml: *ref_1
+      ../.im.will.yml: *ref_2
   ../:
     about:
       name: wModuleForTesting3
@@ -792,13 +814,22 @@ module:
         used with another purpose.
       enabled: 1
       version: 0.0.1
-      interpreters: *ref_2
-      keywords: *ref_3
+      interpreters:
+        - njs >= 10.0.0
+        - chrome >= 60.0.0
+        - firefox >= 60.0.0
+      keywords:
+        - willbe
+        - test
       license: MIT
       author: Kostiantyn Wandalen <wanalen@01.school>
-      contributors: *ref_4
+      contributors:
+        - Kostiantyn Wandalen <wanalen@01.school>
+        - Kryvoruchko Dmytro <dm.vict.kr@gmail.com>
       npm.name: wmodulefortesting1
-      npm.scripts: *ref_5
+      npm.scripts:
+        test: wtest .run proto/**
+        docgen: wdocgen .build proto
     path:
       module.willfiles:
         criterion:
@@ -1455,6 +1486,9 @@ module:
       ../.im.will.yml:
         hash: c5569ba48b2707a39a0210e354df54fc
         size: 4848
+      wModuleForTesting3.out.will.yml:
+        hash: 1d41a099b641873ca52f61aa982d0592
+        size: 77519
   ../.module/ModuleForTesting1/out/wModuleForTesting1.out:
     about:
       name: wModuleForTesting1
@@ -2243,9 +2277,9 @@ module:
           content: proto
           export: 1
     consistency:
-      ../.module/ModuleForTesting1/out/wModuleForTesting1.out.will.yml: *ref_6
-      ../.module/ModuleForTesting1/.ex.will.yml: *ref_7
-      ../.module/ModuleForTesting1/.im.will.yml: *ref_8
+      ../.module/ModuleForTesting1/out/wModuleForTesting1.out.will.yml: *ref_3
+      ../.module/ModuleForTesting1/.ex.will.yml: *ref_4
+      ../.module/ModuleForTesting1/.im.will.yml: *ref_5
   ../.module/ModuleForTesting1/:
     about:
       name: wModuleForTesting1
@@ -2928,6 +2962,6 @@ module:
           - 'build::release'
           - 'build::npm'
     consistency:
-      ../.module/ModuleForTesting1/.ex.will.yml: *ref_7
-      ../.module/ModuleForTesting1/.im.will.yml: *ref_8
-      ../.module/ModuleForTesting1/out/wModuleForTesting1.out.will.yml: *ref_6
+      ../.module/ModuleForTesting1/.ex.will.yml: *ref_4
+      ../.module/ModuleForTesting1/.im.will.yml: *ref_5
+      ../.module/ModuleForTesting1/out/wModuleForTesting1.out.will.yml: *ref_3
