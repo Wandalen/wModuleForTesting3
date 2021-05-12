@@ -2921,6 +2921,4 @@ module:
     consistency:
       ../.module/ModuleForTesting1/.ex.will.yml: *ref_7
       ../.module/ModuleForTesting1/.im.will.yml: *ref_8
-      ../.module/ModuleForTesting1/out/wModuleForTesting1.out.will.yml:
-        hash: 514d478fef09afd7184d351260466d96
-        size: 38321
+      ../.module/ModuleForTesting1/out/wModuleForTesting1.out.will.yml: *ref_6
