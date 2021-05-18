@@ -1,6 +1,6 @@
 {
   "name" : "wmodulefortesting3",
-  "version" : "0.0.170",
+  "version" : "0.0.171",
   "engine" : "node >= 10.0.0",
   "description" : "Module for testing. This module is a test asset and not intended to be used with another purpose.",
   "author" : "Kostiantyn Wandalen <wanalen@01.school>",
@@ -23,6 +23,6 @@
     "url" : "https://github.com/Wandalen/wModuleForTesting3/issues"
   },
   "dependencies" : {},
-  "devDependencies" : { "wmodulefortesting1" : "delta" },
+  "devDependencies" : { "wmodulefortesting1" : "gamma" },
   "keywords" : [ "willbe", "test" ]
 }
