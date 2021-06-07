@@ -1,7 +1,5 @@
 
-require( 'wmodulefortesting3' );
-
-let _ = _global_._test_;
+let _ = require( 'wmodulefortesting3' );
 
 var result = _.sumOfNumbers( 1, 2 );
 
