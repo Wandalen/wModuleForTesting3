@@ -23,6 +23,6 @@
     "url" : "https://github.com/Wandalen/wModuleForTesting3/issues"
   },
   "dependencies" : {},
-  "devDependencies" : { "wmodulefortesting1" : "", "wTesting" : "" },
+  "devDependencies" : { "wmodulefortesting1" : "" },
   "keywords" : [ "willbe", "test" ]
 }
