@@ -3,8 +3,8 @@ root:
   - wModuleForTesting3.out
 consistency:
   ../will.yml: &ref_0
-    hash: b8883a6b1afc8aea361c76b9c3083a3a
-    size: 6440
+    hash: 5cc5b99055a57307f935f52a971b3403
+    size: 6470
 module:
   wModuleForTesting3.out:
     about:
@@ -57,13 +57,13 @@ module:
           predefined: 1
         path: ..
       repository:
-        path: 'git+https:///github.com/Wandalen/wModuleForTesting1.git'
+        path: 'git+https:///github.com/Wandalen/wModuleForTesting3.git'
       origins:
         path:
-          - 'git+https:///github.com/Wandalen/wModuleForTesting1.git'
+          - 'git+https:///github.com/Wandalen/wModuleForTesting3.git'
           - 'npm:///wmodulefortesting1'
       bugtracker:
-        path: 'https:///github.com/Wandalen/wModuleForTesting1/issues'
+        path: 'https:///github.com/Wandalen/wModuleForTesting3/issues'
       in:
         path: .
       out:
@@ -107,7 +107,7 @@ module:
       entry.proto.no.tests:
         criterion:
           tests: no.tests
-        path: ../proto/wtools/testing/l1/Include.s
+        path: ../proto/wtools/testing/l3/ModuleForTesting3.s
       entry.proto.only.tests:
         criterion:
           tests: only.tests
@@ -117,13 +117,13 @@ module:
           debug: debug
           raw: raw
           content: prime
-        path: '{path::out.*=1}/proto/wtools/testing/l1/Include.s'
+        path: '{path::out.*=1}/proto/wtools/testing/l3/ModuleForTesting3.s'
       entry.out.raw.debug.release:
         criterion:
           debug: release
           raw: raw
           content: prime
-        path: '{path::out.*=1}/proto/wtools/testing/l1/Include.s'
+        path: '{path::out.*=1}/proto/wtools/testing/l3/ModuleForTesting3.s'
       entry.out.compiled.debug.debug:
         criterion:
           debug: debug
@@ -138,7 +138,7 @@ module:
         path: '{path::out.*=}/source/Index.s'
       npm.proto.entry:
         path:
-          - ../proto/wtools/testing/l1/Include.s
+          - ../proto/wtools/testing/l3/ModuleForTesting3.s
           - ../proto/node_modules/wmodulefortesting3
       exported.dir.proto.export:
         criterion:
@@ -158,12 +158,9 @@ module:
           - ../proto/node_modules/wmodulefortesting3
           - ../proto/wtools
           - ../proto/wtools/testing
-          - ../proto/wtools/testing/Basic.s
-          - ../proto/wtools/testing/l1
-          - ../proto/wtools/testing/l1/Include.s
-          - ../proto/wtools/testing/l1/ModuleForTesting1.s
-          - ../proto/wtools/testing/l1.test
-          - ../proto/wtools/testing/l1.test/ModuleForTesting1.test.s
+          - ../proto/wtools/testing/Common.s
+          - ../proto/wtools/testing/l3
+          - ../proto/wtools/testing/l3/ModuleForTesting3.s
     submodule:
       wModuleForTesting1:
         path: >-
@@ -808,13 +805,13 @@ module:
           predefined: 1
         path: .
       repository:
-        path: 'git+https:///github.com/Wandalen/wModuleForTesting1.git'
+        path: 'git+https:///github.com/Wandalen/wModuleForTesting3.git'
       origins:
         path:
-          - 'git+https:///github.com/Wandalen/wModuleForTesting1.git'
+          - 'git+https:///github.com/Wandalen/wModuleForTesting3.git'
           - 'npm:///wmodulefortesting1'
       bugtracker:
-        path: 'https:///github.com/Wandalen/wModuleForTesting1/issues'
+        path: 'https:///github.com/Wandalen/wModuleForTesting3/issues'
       in:
         path: .
       out:
@@ -858,7 +855,7 @@ module:
       entry.proto.no.tests:
         criterion:
           tests: no.tests
-        path: proto/wtools/testing/l1/Include.s
+        path: proto/wtools/testing/l3/ModuleForTesting3.s
       entry.proto.only.tests:
         criterion:
           tests: only.tests
@@ -868,13 +865,13 @@ module:
           debug: debug
           raw: raw
           content: prime
-        path: '{path::out.*=1}/proto/wtools/testing/l1/Include.s'
+        path: '{path::out.*=1}/proto/wtools/testing/l3/ModuleForTesting3.s'
       entry.out.raw.debug.release:
         criterion:
           debug: release
           raw: raw
           content: prime
-        path: '{path::out.*=1}/proto/wtools/testing/l1/Include.s'
+        path: '{path::out.*=1}/proto/wtools/testing/l3/ModuleForTesting3.s'
       entry.out.compiled.debug.debug:
         criterion:
           debug: debug
@@ -889,7 +886,7 @@ module:
         path: '{path::out.*=}/source/Index.s'
       npm.proto.entry:
         path:
-          - proto/wtools/testing/l1/Include.s
+          - proto/wtools/testing/l3/ModuleForTesting3.s
           - proto/node_modules/wmodulefortesting3
     submodule:
       wModuleForTesting1:
@@ -1429,5 +1426,5 @@ module:
           - 'build::npm'
     consistency:
       ../will.yml:
-        hash: b8883a6b1afc8aea361c76b9c3083a3a
-        size: 6440
+        hash: 5cc5b99055a57307f935f52a971b3403
+        size: 6470
